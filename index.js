@@ -82,3 +82,14 @@ products.forEach(product => console.log(product.product));
 console.log("Products with names shorter than 5 characters:");
 console.log(products.filter(product => product.product.length <= 5));
 
+// Price Manipulation
+console.log("Total price of products with valid prices:");
+const totalPrice = products
+  .filter(product => product.price !== '' && !isNaN(product.price))
+  .reduce((acc, product) => acc + Number(product.price), 0);
+console.log(totalPrice);
+
+// Concatenate Product Names
+console.log("Concatenated product names:");
+const concatenatedNames = products.reduce((acc, product) => acc + product.product + ', ', '');
+console.log(concatenatedNames.slice(0, -2)); // Removing the last comma and space
