@@ -100,3 +100,11 @@ const prices = products.map(product => Number(product.price)).filter(price => !i
 const highestPrice = Math.max(...prices);
 const lowestPrice = Math.min(...prices);
 console.log(`Highest: ${highestPrice}. Lowest: ${lowestPrice}.`);
+
+// Object Transformation
+console.log("Recreated products object:");
+const recreatedProducts = Object.entries(products).reduce((acc, [index, { product, price }]) => {
+  acc[index] = { name: product, cost: isNaN(price) ? null : Number(price) };
+  return acc;
+}, {});
+console.log(recreatedProducts);
