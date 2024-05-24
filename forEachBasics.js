@@ -18,3 +18,4 @@ function forEachBasics(names, provinces) {
       });
   }
   
+  module.exports = forEachBasics;
