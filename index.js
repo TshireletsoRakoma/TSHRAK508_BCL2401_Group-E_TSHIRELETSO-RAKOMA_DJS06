@@ -93,3 +93,10 @@ console.log(totalPrice);
 console.log("Concatenated product names:");
 const concatenatedNames = products.reduce((acc, product) => acc + product.product + ', ', '');
 console.log(concatenatedNames.slice(0, -2)); // Removing the last comma and space
+
+// Find Extremes in Prices
+console.log("Highest and Lowest Prices:");
+const prices = products.map(product => Number(product.price)).filter(price => !isNaN(price));
+const highestPrice = Math.max(...prices);
+const lowestPrice = Math.min(...prices);
+console.log(`Highest: ${highestPrice}. Lowest: ${lowestPrice}.`);
