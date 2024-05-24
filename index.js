@@ -61,3 +61,12 @@ console.log("\nFinding 'S':");
 // Creating a boolean array to determine if a name contains the letter 'S'
 const containsS = names.map(name => name.includes('S') || name.includes('s'));
 console.log(containsS);
+
+// Creating Object Mapping
+console.log("\nCreating Object Mapping:");
+// Transforming the names array into an object mapping names to their respective provinces
+const nameProvinceMapping = names.reduce((acc, name, index) => {
+  acc[name] = provinces[index];
+  return acc;
+}, {});
+console.log(nameProvinceMapping);
