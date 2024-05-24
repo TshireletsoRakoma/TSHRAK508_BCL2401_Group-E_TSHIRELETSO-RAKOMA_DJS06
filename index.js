@@ -55,3 +55,9 @@ console.log("\nFiltering Cape:");
 const filteredProvinces = provinces.filter(province => !province.includes("Cape"));
 console.log(filteredProvinces);
 console.log(`Remaining provinces count: ${filteredProvinces.length}`);
+
+// Finding 'S'
+console.log("\nFinding 'S':");
+// Creating a boolean array to determine if a name contains the letter 'S'
+const containsS = names.map(name => name.includes('S') || name.includes('s'));
+console.log(containsS);
