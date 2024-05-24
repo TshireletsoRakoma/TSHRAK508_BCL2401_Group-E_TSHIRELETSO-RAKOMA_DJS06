@@ -28,3 +28,11 @@ names.forEach(name => {
   const provinceIndex = names.indexOf(name);
   console.log(`${name} (${provinces[provinceIndex]})`);
 });
+
+// Uppercase and Lowercase Transformation
+console.log("\nUppercase and Lowercase Transformation:");
+// Creating new arrays of province names in uppercase and lowercase
+const uppercaseProvinces = provinces.map(province => province.toUpperCase());
+console.log("Uppercase:", uppercaseProvinces);
+const lowercaseProvinces = provinces.map(province => province.toLowerCase());
+console.log("Lowercase:", lowercaseProvinces);
