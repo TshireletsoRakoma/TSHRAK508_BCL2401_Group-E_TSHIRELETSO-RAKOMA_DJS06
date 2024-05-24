@@ -36,3 +36,9 @@ const uppercaseProvinces = provinces.map(province => province.toUpperCase());
 console.log("Uppercase:", uppercaseProvinces);
 const lowercaseProvinces = provinces.map(province => province.toLowerCase());
 console.log("Lowercase:", lowercaseProvinces);
+
+// Name Lengths
+console.log("\nName Lengths:");
+// Creating a new array containing the length of each name
+const nameLengths = names.map(name => name.length);
+console.log(nameLengths)
