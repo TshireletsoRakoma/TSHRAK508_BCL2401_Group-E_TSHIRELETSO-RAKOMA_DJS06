@@ -13,3 +13,11 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ];
+
+// ForEach Basics
+console.log("ForEach Basics:");
+// Logging each name and province
+console.log("Names:");
+names.forEach(name => console.log(name));
+console.log("\nProvinces:");
+provinces.forEach(province => console.log(province));
