@@ -42,3 +42,9 @@ console.log("\nName Lengths:");
 // Creating a new array containing the length of each name
 const nameLengths = names.map(name => name.length);
 console.log(nameLengths)
+
+// Sorting
+console.log("\nSorting:");
+// Alphabetically sorting the provinces
+const sortedProvinces = provinces.sort();
+console.log(sortedProvinces);
