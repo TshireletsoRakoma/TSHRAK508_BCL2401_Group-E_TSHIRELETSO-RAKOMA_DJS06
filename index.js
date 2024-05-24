@@ -70,3 +70,15 @@ const nameProvinceMapping = names.reduce((acc, name, index) => {
   return acc;
 }, {});
 console.log(nameProvinceMapping);
+
+// Advanced Exercises (Single console.log Execution)
+console.log("\nAdvanced Exercises:");
+
+// Log Products
+console.log("Products:");
+products.forEach(product => console.log(product.product));
+
+// Filter by Name Length
+console.log("Products with names shorter than 5 characters:");
+console.log(products.filter(product => product.product.length <= 5));
+
